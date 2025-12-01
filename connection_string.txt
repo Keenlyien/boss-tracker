@@ -1,0 +1,1 @@
+mongodb+srv://keenlyien:SADlife12345@bosstracker.alqsb9c.mongodb.net/?appName=BossTracker

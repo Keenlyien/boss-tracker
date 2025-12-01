@@ -5,7 +5,7 @@ import os
 # Replace with your MongoDB Atlas connection string
 MONGO_URI = os.environ.get("MONGO_URI")  # We'll set this in Vercel later
 if not MONGO_URI:
-    MONGO_URI = "mongodb+srv://keenlyien:SADlife12345@bosstracker.alqsb9c.mongodb.net/?appName=BossTracker"
+    MONGO_URI = "mongodb+srv://keenlyien:admin12345@bosstracker.alqsb9c.mongodb.net/?appName=BossTracker"
 
 client = MongoClient(MONGO_URI)
 db = client.bossTracker

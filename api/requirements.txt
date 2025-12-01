@@ -1,4 +1,4 @@
-pymongo[srv]
-
-PyJWT>=2.0.0
-python-dotenv>=1.0.0
+pymongo
+dnspython
+PyJWT
+python-dotenv

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boss Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #444;
+            color: white;
+        }
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        .dead {
+            background: #ffaa99;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Boss Tracker</h1>
+<p>This page shows boss spawn information.</p>
+
+<table id="bossTable">
+    <tr>
+        <th>Boss</th>
+        <th>Level</th>
+        <th>Location</th>
+        <th>Respawn</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+</table>
+
+<script>
+async function loadBosses() {
+    const res = await fetch("/api/bosses");
+    const data = await res.json();
+    const bosses = data.bosses;
+
+    const table = document.getElementById("bossTable");
+
+    for (const name in bosses) {
+        const boss = bosses[name];
+        const row = document.createElement("tr");
+
+        const status = boss.last_killed
+            ? "Killed at " + boss.last_killed
+            : "Alive / Unknown";
+
+        row.innerHTML = `
+            <td>${name}</td>
+            <td>${boss.level}</td>
+            <td>${boss.location}</td>
+            <td>${boss.respawn}</td>
+            <td>${status}</td>
+            <td><button onclick="markDead('${name}')">Mark Dead</button></td>
+        `;
+
+        table.appendChild(row);
+    }
+}
+
+async function markDead(name) {
+    await fetch(`/api/update?boss=${encodeURIComponent(name)}`);
+    alert(name + " marked dead!");
+    location.reload();
+}
+
+loadBosses();
+</script>
+
+</body>
+</html>

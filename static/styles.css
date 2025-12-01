@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #333;
+}
+
+tr:hover {
+    background-color: #222;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.available {
+    color: #00e676;
+}
+
+.status.dead {
+    color: #ff5252;
+}
+
+.refresh-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.refresh-button:hover {
+    background: #e6b800;
+}

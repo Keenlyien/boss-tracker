@@ -1,0 +1,118 @@
+{
+  "bosses": {
+    "Venatus": {
+      "level": 60,
+      "respawn": "10 Hours",
+      "location": "Corrupted River Stream",
+      "last_killed": null
+    },
+    "Livera": {
+      "level": 75,
+      "respawn": "24 Hours",
+      "location": "Black Storm Peninsula",
+      "last_killed": null
+    },
+    "Lady Dalia": {
+      "level": 85,
+      "respawn": "18 Hours",
+      "location": "Bloody Shadow",
+      "last_killed": null
+    },
+    "Thymele": {
+      "level": 85,
+      "respawn": "Monday 19:00, Wednesday 11:30",
+      "location": "Mark of Rampage",
+      "last_killed": null
+    },
+    "Baron Braudmore": {
+      "level": 88,
+      "respawn": "32 Hours",
+      "location": "Rosevine Bridge",
+      "last_killed": null
+    },
+    "Milavy": {
+      "level": 90,
+      "respawn": "Saturday 15:00",
+      "location": "Lower Tomb of Tyriosa 3F",
+      "last_killed": null
+    },
+    "Wannitas": {
+      "level": 93,
+      "respawn": "48 Hours",
+      "location": "Snare Swamp",
+      "last_killed": null
+    },
+    "Duplican": {
+      "level": 93,
+      "respawn": "48 Hours",
+      "location": "Open-Eyed Puppet's Throne",
+      "last_killed": null
+    },
+    "Shuliar": {
+      "level": 95,
+      "respawn": "35 Hours",
+      "location": "Masquerade of Hounds",
+      "last_killed": null
+    },
+    "Roderick": {
+      "level": 95,
+      "respawn": "Friday 19:00",
+      "location": "Garbana Underground Waterway 1F",
+      "last_killed": null
+    },
+    "Titore": {
+      "level": 98,
+      "respawn": "37 Hours",
+      "location": "Deadman's Land District 2",
+      "last_killed": null
+    },
+    "Larba": {
+      "level": 98,
+      "respawn": "35 Hours",
+      "location": "Garbana Reclaimed Land",
+      "last_killed": null
+    },
+    "Catena": {
+      "level": 100,
+      "respawn": "35 Hours",
+      "location": "Deadman's Land District 3",
+      "last_killed": null
+    },
+    "Auraq": {
+      "level": 100,
+      "respawn": "Sunday 21:00",
+      "location": "Garbana Underground Waterway 2F",
+      "last_killed": null
+    },
+    "Secreta": {
+      "level": 100,
+      "respawn": "62 Hours",
+      "location": "Kallion's Tomb",
+      "last_killed": null
+    },
+    "Ordo": {
+      "level": 100,
+      "respawn": "62 Hours",
+      "location": "Successor's Paradise",
+      "last_killed": null
+    },
+    "Asta": {
+      "level": 100,
+      "respawn": "62 Hours",
+      "location": "Goldblood Plain",
+      "last_killed": null
+    },
+    "Chaiflock": {
+      "level": 120,
+      "respawn": "Saturday 22:00",
+      "location": "Kallion's Tomb",
+      "last_killed": null
+    },
+    "Benji": {
+      "level": 120,
+      "respawn": "Sunday 21:00",
+      "location": "Nest of Vengeance",
+      "last_killed": null
+    }
+  }
+}
